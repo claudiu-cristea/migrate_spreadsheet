@@ -21,7 +21,7 @@ source:
   worksheet: 'Personnel list'
   # The first row from where the table starts. Points to the row that contains
   # the table header. It's a "zero based" value. If the table row is the first
-  # row, this shoukd be 0. The value of 3 means that the table header is on the
+  # row, this should be 0. The value of 3 means that the table header is on the
   # fourth row.
   header_row: 3
   # Columns to be returned, basically a list of table header cell values.
@@ -30,7 +30,7 @@ source:
     - 'First name'
     - 'Sure name'
     - Gender
-  # If this setting is specifified, the source will return also a column
+  # If this setting is specified, the source will return also a column
   # containing the 'zero based' row index under this name. For this example,
   # 'Row index' can be used later in `keys:` list to make this column a primary
   # key column.
