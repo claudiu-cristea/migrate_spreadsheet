@@ -1,0 +1,28 @@
+migrate.source.spreadsheet:
+  type: migrate_source
+  label: 'Spreadsheet'
+  mapping:
+    file:
+      type: string
+      label: 'Path to the source spredsheet file'
+    worksheet:
+      type: string
+      label: 'The worksheet name'
+    header_row:
+      type: integer
+      label: 'The first row from where the table starts. It''s a "zero based" value.'
+    columns:
+      type: sequence
+      label: 'Columns to be read from spreadsheet'
+      sequence:
+        type: string
+        label: 'Column'
+    row_index_column:
+      type: string
+      label: 'Name of row index "zero based" value'
+    keys:
+      type: sequence
+      label: 'Column name(s) which represent the key uniquely identifying each record'
+      sequence:
+        type: string
+        label: 'Key field'

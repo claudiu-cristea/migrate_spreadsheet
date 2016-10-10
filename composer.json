@@ -1,0 +1,36 @@
+{
+  "name": "drupal/migrate_spreadsheet",
+  "description": "Provides a migrate source plugin for importing data from spreadsheet files",
+  "type": "drupal-module",
+  "license": "GPL-2.0+",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/migrate_spreadsheet",
+    "source": "https://www.drupal.org/project/migrate_spreadsheet"
+  },
+  "keywords": [
+    "Drupal",
+    "Spreadsheet",
+    "Excel"
+  ],
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "phpoffice/phpspreadsheet",
+        "version": "0.0",
+        "dist": {
+          "url": "https://github.com/PHPOffice/PhpSpreadsheet/archive/develop.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "phpoffice/phpspreadsheet": "~0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpOffice\\PhpSpreadsheet\\": "vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet"
+    }
+  }
+}
