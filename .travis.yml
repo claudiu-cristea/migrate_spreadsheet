@@ -109,6 +109,7 @@ install:
   - drupal-ti install
 
 before_script:
+  - phpenv config-rm xdebug.ini || true
   - drupal-ti before_script
 
 script:
